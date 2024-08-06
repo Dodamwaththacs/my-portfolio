@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+/* Tailwind CSS directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Add your global styles here */
 body {
     font-family: Arial, sans-serif;
