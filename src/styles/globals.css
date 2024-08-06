@@ -1,0 +1,14 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Add your global styles here */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+/* Add more styles as needed */
