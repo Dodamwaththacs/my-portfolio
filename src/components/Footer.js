@@ -3,7 +3,7 @@ import styles from "../styles/Footer.module.css";
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+      <p>&copy; 2024 ZERO_31. All rights reserved.</p>
     </footer>
   );
 }
