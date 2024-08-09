@@ -2,15 +2,14 @@
   background-color: #1921e4; /* Main color for the header */
   padding: 20px;
   display: flex;
-  justify-content: center; /* Center the content horizontally */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  justify-content: right; /* Center the content horizontally */
 }
 
 .nav {
   width: 100%;
   max-width: 1200px; /* Max width for the nav container */
   display: flex;
-  justify-content: center; /* Center the navigation items */
+  justify-content: right; /* Center the navigation items */
 }
 
 .ul {

@@ -7,50 +7,55 @@ export default function Header() {
 
   return (
     <header className={styles.header}>
-      <nav className={styles.nav}>
-        <ul className={styles.ul}>
-          <li className={styles.li}>
-            <Link
-              href="/"
-              className={`${styles.link} ${
-                router.pathname === "/" ? styles.activeLink : ""
-              }`}
-            >
-              Home
-            </Link>
-          </li>
-          <li className={styles.li}>
-            <Link
-              href="/about"
-              className={`${styles.link} ${
-                router.pathname === "/about" ? styles.activeLink : ""
-              }`}
-            >
-              About
-            </Link>
-          </li>
-          <li className={styles.li}>
-            <Link
-              href="/projects"
-              className={`${styles.link} ${
-                router.pathname === "/projects" ? styles.activeLink : ""
-              }`}
-            >
-              Projects
-            </Link>
-          </li>
-          <li className={styles.li}>
-            <Link
-              href="/contact"
-              className={`${styles.link} ${
-                router.pathname === "/contact" ? styles.activeLink : ""
-              }`}
-            >
-              Contact
-            </Link>
-          </li>
-        </ul>
-      </nav>
+      <div>
+        <h1>Portfolio</h1>
+      </div>
+      <div>
+        <nav className={styles.nav}>
+          <ul className={styles.ul}>
+            <li className={styles.li}>
+              <Link
+                href="/"
+                className={`${styles.link} ${
+                  router.pathname === "/" ? styles.activeLink : ""
+                }`}
+              >
+                Home
+              </Link>
+            </li>
+            <li className={styles.li}>
+              <Link
+                href="/about"
+                className={`${styles.link} ${
+                  router.pathname === "/about" ? styles.activeLink : ""
+                }`}
+              >
+                About
+              </Link>
+            </li>
+            <li className={styles.li}>
+              <Link
+                href="/projects"
+                className={`${styles.link} ${
+                  router.pathname === "/projects" ? styles.activeLink : ""
+                }`}
+              >
+                Projects
+              </Link>
+            </li>
+            <li className={styles.li}>
+              <Link
+                href="/contact"
+                className={`${styles.link} ${
+                  router.pathname === "/contact" ? styles.activeLink : ""
+                }`}
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
   );
 }

@@ -1,6 +1,11 @@
 import Head from "next/head";
-
 import Image from "next/image";
+import IconButton from "../components/IconButton";
+import { FaGithub } from "react-icons/fa";
+import { GrInstagram } from "react-icons/gr";
+import { FaLinkedin } from "react-icons/fa";
+import { FaMedium } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa";
 
 export default function Home() {
   return (
@@ -32,35 +37,30 @@ export default function Home() {
               technical challenges, I'm ready to leverage my fullstack skills to
               create innovative digital solutions that make an impact.
             </p>
-            <div class="flex flex-row gap-8">
-              <Image
-                src="/facebook.png"
-                alt="Facebook"
-                width={50}
-                height={50}
-                className="mt-4 transition-shadow duration-300 hover:shadow-lg"
-              />
-              <Image
-                src="/linkedin.svg"
-                alt="Linkedin"
-                width={50}
-                height={50}
-                className="mt-4"
-              />
-              <Image
-                src="/github.svg"
-                alt="Github"
-                width={50}
-                height={50}
-                className="mt-4"
-              />
-              <Image
-                src="/medium.svg"
-                alt="Medium"
-                width={50}
-                height={50}
-                className="mt-4"
-              />
+
+            <div className="flex flex-row gap-8 p-8">
+              <IconButton text="Github">
+                <FaGithub size={30} />
+              </IconButton>
+
+              <IconButton text="LinkedIn" color="bg-blue-500">
+                <FaLinkedin size={30} />
+              </IconButton>
+
+              <IconButton text="Medium" color="bg-black">
+                <FaMedium size={30} />
+              </IconButton>
+
+              <IconButton
+                text="Instagrame"
+                color="bg-gradient-to-tr from-yellow-500 to-purple-500 via-pink-500"
+              >
+                <GrInstagram size={30} />
+              </IconButton>
+
+              <IconButton text="Facebook" color="bg-blue-600">
+                <FaFacebook size={30} />
+              </IconButton>
             </div>
           </div>
           <div class="basis-1/2 flex justify-end">
