@@ -1,6 +1,4 @@
 import Head from "next/head";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
 import ProjectCard from "../components/ProjectCard";
 import styles from "../styles/Home.module.css";
 
@@ -19,8 +17,6 @@ export default function Projects() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
-
       <main className={styles.main}>
         <h1>My Projects</h1>
         <div className={styles.projects}>
@@ -29,8 +25,6 @@ export default function Projects() {
           ))}
         </div>
       </main>
-
-      <Footer />
     </div>
   );
 }

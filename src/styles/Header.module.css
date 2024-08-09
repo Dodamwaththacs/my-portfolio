@@ -52,3 +52,7 @@
     width: 100%; /* Expand the underline on hover */
   }
   
+  .activeLink::after {
+    width: 100%; /* Always show the underline for active link */
+  }
+  
