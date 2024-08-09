@@ -6,12 +6,12 @@ export default function Header() {
   const router = useRouter();
 
   return (
-    <header className={styles.header}>
-      <div>
-        <h1>Portfolio</h1>
+    <header class="bg-[#03045e] p-4 flex flex justify-between">
+      <div class="left-div">
+        <h1 class="text-xl text-gray-100 font-mono font-bold">Portfolio.</h1>
       </div>
       <div>
-        <nav className={styles.nav}>
+        <nav class="right-div">
           <ul className={styles.ul}>
             <li className={styles.li}>
               <Link
