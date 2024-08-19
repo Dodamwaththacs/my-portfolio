@@ -19,7 +19,7 @@
   }
   
   .link:hover {
-    color: #ffcd00; /* Color change on hover */
+    color: #ffffff; /* Color change on hover */
   }
   
   .link::after {
@@ -27,7 +27,7 @@
     position: absolute;
     width: 0;
     height: 2px;
-    background: #ffcd00; /* Underline color */
+    background: #FFB703; /* Underline color */
     left: 0;
     bottom: -5px; /* Position it just below the text */
     transition: width 0.3s ease;

@@ -1,11 +1,9 @@
-import styles from "../styles/Footer.module.css";
-
 export default function Footer() {
   return (
-    <footer className="bg-zinc-50 text-center dark:bg-neutral-700 lg:text-left">
-      <div className="bg-black/5 p-4 text-center text-surface dark:text-white">
+    <footer className="bg-[#023047] text-center  lg:text-left">
+      <div className="bg-black/5 p-4 text-center text-surface dark:text-white font-serif">
         © 2023 Copyright:
-        <a href="https://tw-elements.com/">TW Elements</a>
+        <a href="https://tw-elements.com/"> Zero-31</a>
       </div>
     </footer>
   );

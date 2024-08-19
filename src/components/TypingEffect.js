@@ -47,9 +47,13 @@ const TypingEffect = ({
   ]);
 
   return (
-    <h3 className="text-[49px] mb-4">
-      <span className="mr-1">I'm a</span>
-      <span className="font-bold text-blue-600">{text}</span>
+    <h3 className="mb-4">
+      <span className="mr-1 text-[#FFFFFF] font-serif text-[30px] ">
+        I'm a{" "}
+      </span>
+      <span className="font-bold text-[#FFB703] font-serif no-gap text-[49px] ">
+        {text}
+      </span>
       <span className="animate-blink">|</span>
     </h3>
   );

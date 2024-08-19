@@ -1,13 +1,11 @@
 import "../styles/globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import GlitchEffect from "../components/GlitchEffect";
+import "../styles/tailwind.css";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div className="flex flex-col h-screen bg-transparent ">
-      <div className="live-background"></div>
-
+    <div className="flex flex-col h-screen bg-[#000000]">
       <Header />
       <main className="flex-grow z-10">
         <Component {...pageProps} />
