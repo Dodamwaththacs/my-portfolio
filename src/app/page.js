@@ -13,13 +13,13 @@ export default function Home() {
     "DevOps Engineer",
   ];
   return (
-    <div className="flex h-full">
+    <main className="flex h-full">
       <Head>
         <title>Home</title>
         <meta name="description" content="Learn more about me" />
         <link rel="icon" href="/myphoto/myphoto.png" />
       </Head>
-      <div className="w-3/5 flex flex-col  justify-center h-full px-14">
+      <div className="basis-3/5 flex flex-col  justify-center h-full px-14">
         <h3 className="text-[30px] text-[#FFFFFF] font-serif">Hello, </h3>
         <h1 className="text-[40px] text-[#FFFFFF] font-serif">
           It's me Chamika
@@ -65,7 +65,7 @@ export default function Home() {
           </IconButton>
         </div>
       </div>
-      <div className="w-2/5  flex items-center justify-center">
+      <div className="basis-2/5  flex items-center justify-center">
         <Image
           src="/myphoto/myphoto.png"
           alt="Chamika"
@@ -75,6 +75,6 @@ export default function Home() {
           className="object-cover"
         />
       </div>
-    </div>
+    </main>
   );
 }

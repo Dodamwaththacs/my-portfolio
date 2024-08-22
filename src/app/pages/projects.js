@@ -1,5 +1,5 @@
 import Head from "next/head";
-import ProjectCard from "../components/ProjectCard";
+import ProjectCard from "../../components/ProjectCard";
 import styles from "../styles/Home.module.css";
 
 export default function Projects() {
