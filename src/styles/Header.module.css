@@ -11,15 +11,15 @@
   }
   
   .link {
-    text-decoration: none; /* Remove underline from links */
-    color:#ffffff; /* Text color for links */
+    text-decoration: none; 
+    color:#ffffff; 
     font-weight: 500;
     font-size: 18px;
-    transition: color 0.3s ease; /* Smooth transition for hover effects */
+    transition: color 0.3s ease; 
   }
   
   .link:hover {
-    color: #ffffff; /* Color change on hover */
+    color: #ffffff; 
   }
   
   .link::after {
@@ -27,17 +27,17 @@
     position: absolute;
     width: 0;
     height: 2px;
-    background: #FFB703; /* Underline color */
+    background: #FFB703; 
     left: 0;
-    bottom: -5px; /* Position it just below the text */
+    bottom: -5px; 
     transition: width 0.3s ease;
   }
   
   .link:hover::after {
-    width: 100%; /* Expand the underline on hover */
+    width: 100%; 
   }
   
   .activeLink::after {
-    width: 100%; /* Always show the underline for active link */
+    width: 100%; 
   }
   

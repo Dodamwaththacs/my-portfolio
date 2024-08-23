@@ -3,7 +3,7 @@ import TechCard from "../../components/TechCard ";
 
 export default function About() {
   return (
-    <main className=" text-white">
+    <main className=" text-white flex h-full">
       <Head>
         <title>About Me</title>
         <meta name="description" content="Learn more about me" />

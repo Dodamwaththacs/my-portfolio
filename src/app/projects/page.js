@@ -1,6 +1,6 @@
 import Head from "next/head";
 import ProjectCard from "../../components/ProjectCard";
-import styles from "../styles/Home.module.css";
+import styles from "../../styles/Home.module.css";
 
 export default function Projects() {
   const projects = [
@@ -10,7 +10,7 @@ export default function Projects() {
   ];
 
   return (
-    <div className={styles.container}>
+    <div className=" text-[#FFFFFF]">
       <Head>
         <title>My Projects</title>
         <meta name="description" content="Check out my projects" />
