@@ -28,14 +28,15 @@ export default function Header() {
             </li>
             <li className={styles.li}>
               <Link
-                href="/about"
+                href="/skills"
                 className={`${styles.link} ${
-                  pathname === "/about" ? styles.activeLink : ""
+                  pathname === "/skills" ? styles.activeLink : ""
                 }`}
               >
-                About
+                Skills
               </Link>
             </li>
+
             <li className={styles.li}>
               <Link
                 href="/projects"
@@ -44,6 +45,16 @@ export default function Header() {
                 }`}
               >
                 Projects
+              </Link>
+            </li>
+            <li className={styles.li}>
+              <Link
+                href="/about"
+                className={`${styles.link} ${
+                  pathname === "/about" ? styles.activeLink : ""
+                }`}
+              >
+                About
               </Link>
             </li>
             <li className={styles.li}>
