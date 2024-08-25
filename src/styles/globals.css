@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+/* Tailwind CSS directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* Add your global styles here */
 body {
     font-family: Arial, sans-serif;
@@ -12,3 +17,22 @@ body {
 }
 
 /* Add more styles as needed */
+@keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+  
+  .animate-blink {
+    animation: blink 1s infinite;
+  }
+
+  .glow-effect {
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .glow-effect:hover {
+    box-shadow: 0 0 8px 2px rgb(255, 255, 255); /* #023047 in rgba format */
+  }
+
+ 

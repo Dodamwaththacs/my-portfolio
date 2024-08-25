@@ -1,8 +1,6 @@
 import Head from "next/head";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import ProjectCard from "../components/ProjectCard";
-import styles from "../styles/Home.module.css";
+import ProjectCard from "../../components/ProjectCard";
+import styles from "../../styles/Home.module.css";
 
 export default function Projects() {
   const projects = [
@@ -12,14 +10,12 @@ export default function Projects() {
   ];
 
   return (
-    <div className={styles.container}>
+    <div className=" text-[#FFFFFF]">
       <Head>
         <title>My Projects</title>
         <meta name="description" content="Check out my projects" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <Header />
 
       <main className={styles.main}>
         <h1>My Projects</h1>
@@ -29,8 +25,6 @@ export default function Projects() {
           ))}
         </div>
       </main>
-
-      <Footer />
     </div>
   );
 }

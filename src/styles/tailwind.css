@@ -1,0 +1,3 @@
+.shared-class {
+    @apply text-[#FFFFFF] border-solid border-2 border-[#FFFFFF] h-40 rounded-lg;
+  }
