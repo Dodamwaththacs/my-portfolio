@@ -50,7 +50,7 @@ const TypingEffect = ({
 
   return (
     <h3 className="mb-4">
-      <span className="mr-1 text-[#FFFFFF] font-serif text-[30px] ">I'm a</span>
+      <span className="mr-1 text-[#FFFFFF] font-serif text-[30px] ">I&#39;m a</span>
       <span className="font-bold text-[#FFB703] font-serif no-gap text-[49px] ">
         {text}
       </span>
