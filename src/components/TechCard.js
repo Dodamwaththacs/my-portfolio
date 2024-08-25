@@ -1,10 +1,10 @@
 import styles from "../styles/Skill.module.css";
+
 const TechCard = ({ imageSrc, title, percentage }) => {
   return (
     <div
       className={`${styles["tech-card"]} bg-gray-800 w-48 h-48 flex flex-col items-center justify-center p-4 transition duration-300 ease-in-out transform hover:scale-105 hover:bg-gray-700 rounded-lg shadow-lg relative`}
     >
-      {" "}
       <div>
         <img
           src={imageSrc}
@@ -20,11 +20,14 @@ const TechCard = ({ imageSrc, title, percentage }) => {
           {title}
         </h2>
       </div>
-      <div
-        className={`${styles.percentage} absolute top-2 right-2 text-white text-sm opacity-0 transition-opacity duration-300`}
-      >
-        {" "}
-        {percentage}%
+
+      <div className={`${styles["progress-container"]} w-full mt-2`}>
+        <div className="bg-gray-600 rounded-full h-2.5">
+          <div
+            className={`${styles["progress-bar"]} bg-blue-600 h-2.5 rounded-full`}
+            style={{ "--percentage": `${percentage}%` }}
+          ></div>
+        </div>
       </div>
     </div>
   );

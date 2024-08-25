@@ -32,7 +32,6 @@ export default function About() {
 
   return (
     <main className="flex text-white justify-center items-center h-full relative">
-      {/* Sidebar with the vertical section title */}
       <div className="basis-1/6 flex justify-center items-center">
         <h1
           className="transform rotate-180 text-2xl font-bold vertical-line"
@@ -47,7 +46,6 @@ export default function About() {
         </h1>
       </div>
 
-      {/* Main content area */}
       <div className="basis-5/6 flex items-center justify-start pl-7">
         <div className="w-4/5">
           {currentSection === 0 ? (
@@ -55,35 +53,72 @@ export default function About() {
               <TechCard
                 imageSrc="/logo/java.png"
                 title="Java"
-                percentage={10}
+                percentage={90}
               />
-              <TechCard imageSrc="/logo/js.png" title="JavaScript" />
-              <TechCard imageSrc="/logo/c.png" title="C" />
-              <TechCard imageSrc="/logo/c-sharp.png" title="C#" />
+              <TechCard
+                imageSrc="/logo/js.png"
+                title="JavaScript"
+                percentage={90}
+              />
+              <TechCard imageSrc="/logo/c.png" title="C" percentage={70} />
+              <TechCard
+                imageSrc="/logo/c-sharp.png"
+                title="C#"
+                percentage={60}
+              />
             </div>
           ) : currentSection === 1 ? (
             <div className="grid grid-cols-4 gap-10 flex items-center justify-center">
-              <TechCard imageSrc="/logo/next.png" title="Next" />
-              <TechCard imageSrc="/logo/spring.png" title="Spring Boot" />
-              <TechCard imageSrc="/logo/net.png" title=".NET" />
+              <TechCard
+                imageSrc="/logo/next.png"
+                title="Next"
+                percentage={80}
+              />
+              <TechCard
+                imageSrc="/logo/spring.png"
+                title="Spring Boot"
+                percentage={95}
+              />
+              <TechCard imageSrc="/logo/net.png" title=".NET" percentage={60} />
             </div>
           ) : (
             <div className="grid grid-cols-4 gap-10 flex items-center justify-center">
-              <TechCard imageSrc="/logo/docker.png" title="Docker" />
-              <TechCard imageSrc="/logo/keycloak.png" title="Keycloak" />
-              <TechCard imageSrc="/logo/nginx.png" title="NGINX" />
-              <TechCard imageSrc="/logo/prometheus.png" title="Prometheus" />
-              <TechCard imageSrc="/logo/Graphana.png" title="Graphana" />
-              <TechCard imageSrc="/logo/aws.png" title="AWS" />
-              <TechCard imageSrc="/logo/azure.png" title="Azure" />
+              <TechCard
+                imageSrc="/logo/docker.png"
+                title="Docker"
+                percentage={80}
+              />
+              <TechCard
+                imageSrc="/logo/keycloak.png"
+                title="Keycloak"
+                percentage={70}
+              />
+              <TechCard
+                imageSrc="/logo/nginx.png"
+                title="NGINX"
+                percentage={60}
+              />
+              <TechCard
+                imageSrc="/logo/prometheus.png"
+                title="Prometheus"
+                percentage={50}
+              />
+              <TechCard
+                imageSrc="/logo/Graphana.png"
+                title="Graphana"
+                percentage={50}
+              />
+              <TechCard imageSrc="/logo/aws.png" title="AWS" percentage={40} />
+              <TechCard
+                imageSrc="/logo/azure.png"
+                title="Azure"
+                percentage={40}
+              />
             </div>
           )}
         </div>
       </div>
 
-      {/* Navigation arrows */}
-
-      {/* Navigation arrows */}
       <button
         onClick={handlePrev}
         className="absolute left-4 top-1/2 transform -translate-y-1/2 text-3xl text-[#FFB703] hover:text-white transition-colors"
