@@ -3,20 +3,18 @@ import styles from "../styles/Skill.module.css";
 const TechCard = ({ imageSrc, title, percentage }) => {
   return (
     <div
-      className={`${styles["tech-card"]} bg-gray-800 w-48 h-48 flex flex-col items-center justify-center p-4 transition duration-300 ease-in-out transform hover:scale-105 hover:bg-gray-700 rounded-lg shadow-lg relative`}
+      className={`${styles["tech-card"]} bg-gray-800 w-70 h-60 flex flex-col items-center justify-between p-6 transition-transform duration-300 ease-in-out transform hover:scale-105 hover:bg-gray-700 rounded-xl shadow-lg relative`}
     >
-      <div>
+      <div className="w-30 h-40 mb-4 overflow-hidden">
         <img
           src={imageSrc}
           alt={title}
-          width={90}
-          height={90}
-          style={{ objectFit: "contain" }}
-          className="mb-4"
+          className="object-cover w-full h-full"
         />
       </div>
+
       <div>
-        <h2 className="text-lg font-semibold text-center text-white">
+        <h2 className="text-xl font-bold text-center text-white mb-2">
           {title}
         </h2>
       </div>
