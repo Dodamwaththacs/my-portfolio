@@ -54,6 +54,7 @@ const TypingEffect = ({
         I'm a{" "}
       </span>
       <span className="font-bold text-[#FFB703] font-serif no-gap text-[50px] ">
+
         {text}
       </span>
       <span className="animate-blink">|</span>
