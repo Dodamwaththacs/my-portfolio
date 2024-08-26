@@ -5,19 +5,29 @@ export default function Projects() {
   const projects = [
     {
       title: "Portable Weather Station",
-      description: "A brief description of Project 1",
-      image: "/path/to/project1-image.jpg",
-      technologies: ["React", "Node.js", "MongoDB"],
+      description:
+        "This is a portable weather station targeted for hikers and campers to ensure their safety and awareness.",
+      image: "/project/weatherStation.jpg",
+      technologies: ["C", "Arduino IDE", "Arduino Uno", "EasyEDA", "Blender"],
       link: "https://project1-link.com",
     },
     {
       title: "Health Hive ",
       description: "A brief description of Project 2",
-      image: "/path/to/project2-image.jpg",
-      technologies: ["Java", "javascript", "Tailwind CSS"],
+      image: "/project/healthHive.png",
+      technologies: [
+        "Java",
+        "javascript",
+        "Tailwind CSS",
+        "Spring Boot",
+        "MySQL",
+        "React",
+        "Docker",
+        "AWS",
+        "Keycloak",
+      ],
       link: "https://project2-link.com",
     },
-    // Add more projects as needed
   ];
 
   return (
@@ -28,10 +38,8 @@ export default function Projects() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={`   felx h-full`}>
-        <h1 className="text-4xl font-bold text-center">My Projects</h1>
-        <div className=""></div>
-        <div className="grid  grid-cols-2 gap-8 justify-items-center">
+      <main className="flex items-center justify-center min-h-[calc(100vh-8rem)]">
+        <div className="grid  grid-cols-2 gap-20 ">
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}

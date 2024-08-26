@@ -8,7 +8,7 @@ export default function ProjectCard({
   link,
 }) {
   return (
-    <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+    <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 w-[600px] h-[500px]">
       <Image
         src={image}
         alt={title}
@@ -16,7 +16,7 @@ export default function ProjectCard({
         height={200}
         className="w-full h-48 object-cover"
       />
-      <div className="p-6">
+      <div className="p-6 h-[300px] overflow-y-auto">
         <h2 className="text-2xl font-bold mb-2">{title}</h2>
         <p className="text-gray-300 mb-4">{description}</p>
         <div className="flex flex-wrap gap-2 mb-4">
