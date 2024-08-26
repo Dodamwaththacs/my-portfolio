@@ -13,15 +13,15 @@ export default function Home() {
     "DevOps Engineer",
   ];
   return (
-    <div className="flex h-full">
+    <main className="flex h-full">
       <Head>
         <title>Home</title>
         <meta name="description" content="Learn more about me" />
         <link rel="icon" href="/myphoto/myphoto.png" />
       </Head>
-      <div className="w-3/5 flex flex-col  justify-center h-full px-14">
-        <h3 className="text-[30px] text-[#FFFFFF] font-serif">Hello, </h3>
-        <h1 className="text-[40px] text-[#FFFFFF] font-serif">
+      <div className="basis-3/5 flex flex-col  justify-center h-full px-16">
+        <h3 className="text-[50px] text-[#FFFFFF] font-serif">Hello, </h3>
+        <h1 className="text-[60px] text-[#FFFFFF] font-serif">
           It's me Chamika
         </h1>
         <TypingEffect words={roles} />
@@ -36,45 +36,45 @@ export default function Home() {
               text="Github"
               color="bg-gray-800 hover:bg-gray-700 glow-effect"
             >
-              <FaGithub size={20} />
+              <FaGithub size={30} />
             </IconButton>
           </a>
           <IconButton
             text="LinkedIn"
             color="bg-blue-600 hover:bg-blue-700 glow-effect"
           >
-            <FaLinkedin size={20} />
+            <FaLinkedin size={30} />
           </IconButton>
           <IconButton
             text="Medium"
             color="bg-gray-800 hover:bg-gray-900 glow-effect"
           >
-            <FaMedium size={20} />
+            <FaMedium size={30} />
           </IconButton>
           <IconButton
             text="Instagram"
             color="bg-gradient-to-tr from-yellow-500 to-purple-600 via-pink-500 hover:from-yellow-600 hover:to-purple-700 hover:via-pink-600 glow-effect"
           >
-            <GrInstagram size={20} />
+            <GrInstagram size={30} />
           </IconButton>
           <IconButton
             text="Facebook"
             color="bg-blue-600 hover:bg-blue-700 glow-effect"
           >
-            <FaFacebook size={20} />
+            <FaFacebook size={30} />
           </IconButton>
         </div>
       </div>
-      <div className="w-2/5  flex items-center justify-center">
+      <div className="basis-2/5  flex items-center justify-start">
         <Image
           src="/myphoto/myphoto.png"
           alt="Chamika"
-          width={400}
-          height={400}
+          width={500}
+          height={500}
           quality={100}
           className="object-cover"
         />
       </div>
-    </div>
+    </main>
   );
 }

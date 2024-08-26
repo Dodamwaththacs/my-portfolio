@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useState, useEffect } from "react";
 
 const TypingEffect = ({
@@ -48,10 +50,10 @@ const TypingEffect = ({
 
   return (
     <h3 className="mb-4">
-      <span className="mr-1 text-[#FFFFFF] font-serif text-[30px] ">
+      <span className="mr-1 text-[#FFFFFF] font-serif text-[50px] ">
         I'm a{" "}
       </span>
-      <span className="font-bold text-[#FFB703] font-serif no-gap text-[49px] ">
+      <span className="font-bold text-[#FFB703] font-serif no-gap text-[50px] ">
         {text}
       </span>
       <span className="animate-blink">|</span>

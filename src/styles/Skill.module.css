@@ -1,0 +1,26 @@
+.tech-card .progress-container {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.tech-card:hover .progress-container {
+  opacity: 1;
+}
+
+.progress-bar {
+  width: 0;
+  transition: width 0.5s ease-out;
+}
+
+.tech-card:hover .progress-bar {
+  width: var(--percentage);
+}
+
+@keyframes fillProgress {
+  from { width: 0; }
+  to { width: var(--percentage); }
+}
+
+.tech-card:hover .progress-bar {
+  animation: fillProgress 0.5s ease-out forwards;
+}
