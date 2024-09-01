@@ -4,6 +4,7 @@ import IconButton from "../components/IconButton";
 import TypingEffect from "../components/TypingEffect";
 import { FaGithub, FaLinkedin, FaMedium, FaFacebook } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
+import Hero from "@/components/threeJS/main/Hero";
 
 export default function Home() {
   const roles = [
@@ -19,14 +20,16 @@ export default function Home() {
         <meta name="description" content="Learn more about me" />
         <link rel="icon" href="/myphoto/myphoto.png" />
       </Head>
-      <div className="basis-3/5 flex flex-col  justify-center h-full px-16">
-        <h3 className="text-[50px] text-[#FFFFFF] font-serif">Hello, </h3>
-        <h1 className="text-[60px] text-[#FFFFFF] font-serif">
-          It's me Chamika
+      <div className="basis-3/5 flex flex-col  justify-center h-full px-[11rem]">
+        <h3 className="text-[40px] text-[#FFFFFF] font-serif leading-relaxed">
+          Hello, It's me
+        </h3>
+        <h1 className="text-[50px] text-[#FFFFFF] font-serif leading-relaxed">
+          Chamika Dodamwaththa
         </h1>
         <TypingEffect words={roles} />
 
-        <div className="flex flex-wrap justify-center md:justify-start gap-3">
+        <div className="flex flex-wrap justify-center md:justify-start gap-3  relative">
           <a
             href="https://github.com/Dodamwaththacs"
             target="_blank"
@@ -65,7 +68,7 @@ export default function Home() {
           </IconButton>
         </div>
       </div>
-      <div className="basis-2/5  flex items-center justify-start">
+      <div className="basis-2/5  flex items-center justify-start  relative">
         <Image
           src="/myphoto/myphoto.png"
           alt="Chamika"

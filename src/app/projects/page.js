@@ -38,7 +38,7 @@ export default function Projects() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex items-center justify-center min-h-[calc(100vh-8rem)]">
+      <main className="flex items-center justify-center min-h-[calc(100vh-8rem)]  relative">
         <div className="grid  grid-cols-2 gap-20 ">
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
