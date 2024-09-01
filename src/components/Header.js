@@ -57,16 +57,6 @@ export default function Header() {
                 About
               </Link>
             </li>
-            <li className={styles.li}>
-              <Link
-                href="/contact"
-                className={`${styles.link} ${
-                  pathname === "/contact" ? styles.activeLink : ""
-                }`}
-              >
-                Contact
-              </Link>
-            </li>
           </ul>
         </nav>
       </div>
