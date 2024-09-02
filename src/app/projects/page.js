@@ -13,7 +13,8 @@ export default function Projects() {
     },
     {
       title: "Health Hive ",
-      description: "A brief description of Project 2",
+      description:
+        "This is a Highly secured health management system. We used bloackchain for insure data intragity. ",
       image: "/project/healthHive.png",
       technologies: [
         "Java",
@@ -25,8 +26,31 @@ export default function Projects() {
         "Docker",
         "AWS",
         "Keycloak",
+        "Prometheus",
+        "Grafana",
+        "NGINX",
+        "Truffle",
+        "Solidity",
+        "Ganache",
       ],
       link: "https://project2-link.com",
+    },
+    {
+      title: "Portfolio Website",
+      description:
+        "This is my portfolio website that showcases my projects and skills. I also use .NET backend for secured data.",
+      image: "/project/portfolio.png",
+      technologies: [
+        "Javascript",
+        "Three.js",
+        "React",
+        "NEXT.JS",
+        "Tailwind",
+        ".NET",
+        "C#",
+        "ProsgreSQL",
+      ],
+      link: "https://project1-link.com",
     },
   ];
 
@@ -38,8 +62,8 @@ export default function Projects() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex items-center justify-center min-h-[calc(100vh-8rem)]">
-        <div className="grid  grid-cols-2 gap-20 ">
+      <main className="flex items-center justify-center min-h-screen relative p-5">
+        <div className="grid  grid-cols-3 gap-10 ">
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}

@@ -1,6 +1,7 @@
 // pages/about.js
 
 import Head from "next/head";
+import Image from "next/image";
 
 export default function About() {
   return (
@@ -13,56 +14,68 @@ export default function About() {
         />
       </Head>
 
-      <div className="min-h-screen bg-gray-100 py-10">
-        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+      <div className="min-h-screen bg-black py-10 ">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8 relative">
           <div className="text-center">
-            <h1 className="text-4xl font-bold text-gray-800">About Me</h1>
-            <p className="mt-4 text-lg text-gray-600">
+            <h1 className="text-4xl font-bold text-white">About Me</h1>
+            <p className="mt-4 text-lg text-gray-400">
               I am a passionate [Your Profession], driven by [Your Values or
               Motivations]. Here's a glimpse of my journey and how we can work
               together.
             </p>
           </div>
 
-          <div className="mt-10 bg-white shadow-md rounded-lg p-6">
-            <h2 className="text-2xl font-semibold text-gray-800 border-b pb-4">
+          <div className="mt-10 bg-white shadow-lg rounded-lg p-6">
+            <h2 className="text-2xl font-semibold text-black border-b pb-4">
               Education
             </h2>
             <div className="mt-6">
               <div className="space-y-4">
-                <div className="border-l-4 border-blue-500 pl-4">
-                  <h3 className="text-xl font-bold text-gray-700">
-                    B.Sc. in Information Technology and Management
-                  </h3>
-                  <p className="text-gray-600">University Of Moratuwa, 2022</p>
-                  <p className="text-gray-500">
-                    Focused on full-stack web development and blockchain
-                    Development.
-                  </p>
+                <div className="border-l-4 border-[#FFB703] pl-4 flex items-start space-x-4">
+                  <div>
+                    <Image
+                      src="/about/UOMlogo.png"
+                      alt="University of Moratuwa"
+                      width={70}
+                      height={70}
+                    />
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-700">
+                      B.Sc. in Information Technology and Management
+                    </h3>
+                    <p className="text-gray-600">
+                      University Of Moratuwa, 2022
+                    </p>
+                    <p className="text-gray-500">
+                      Focused on full-stack web development and blockchain
+                      Development.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
 
-          <div className="mt-10 bg-blue-50 rounded-lg p-6 text-center">
-            <h2 className="text-3xl font-bold text-blue-700">
+          <div className="mt-10 bg-[#FFB703] rounded-lg p-6 text-center">
+            <h2 className="text-3xl font-bold text-black">
               Let's Work Together!
             </h2>
-            <p className="mt-4 text-lg text-blue-600">
+            <p className="mt-4 text-lg text-black">
               I'm always open to new opportunities and collaborations. Whether
               you have a project in mind or just want to say hello, feel free to
               reach out!
             </p>
             <div className="mt-6 flex flex-col space-y-4 sm:space-y-0 sm:flex-row sm:space-x-4 justify-center">
               <a
-                href="mailto:youremail@example.com"
-                className="inline-block bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-blue-700 transition duration-200"
+                href="mailto:chamikasandun3131@gmail.com"
+                className="inline-block bg-black  text-white font-semibold py-3 px-6 rounded-lg  hover:scale-105 transform transition duration-300 hover:shadow-lg hover:shadow-white/80"
               >
                 Contact Me
               </a>
               <a
                 href="/projects"
-                className="inline-block bg-transparent border border-blue-600 text-blue-600 font-semibold py-3 px-6 rounded-lg hover:bg-blue-100 transition duration-200"
+                className="inline-block bg-black  text-white font-semibold py-3 px-6 rounded-lg  hover:scale-105 transform transition duration-300 hover:shadow-lg hover:shadow-white/80"
               >
                 See My Work
               </a>
