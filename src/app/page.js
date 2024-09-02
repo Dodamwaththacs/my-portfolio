@@ -67,6 +67,11 @@ export default function Home() {
             <FaFacebook size={30} />
           </IconButton>
         </div>
+        <div className="mt-7">
+          <span className="bg-[#FFB703] text-black p-2 rounded-lg font-bold">
+            Download my CV
+          </span>
+        </div>
       </div>
       <div className="basis-2/5  flex items-center justify-start  relative">
         <Image
