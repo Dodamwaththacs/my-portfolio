@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import TechCard from "../../components/TechCard";
 import "../../styles/Skill.module.css";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { FaArrowLeft, FaArrowCircleRight } from "react-icons/fa";
 
 export default function About() {
   const [currentSection, setCurrentSection] = useState(0);
@@ -49,7 +49,8 @@ export default function About() {
       <div className="basis-5/6 flex items-center justify-start pl-7">
         <div className="w-4/5">
           {currentSection === 0 ? (
-            <div className="grid grid-cols-4 gap-10 flex items-center justify-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 items-center justify-center">
+              {" "}
               <TechCard
                 imageSrc="/logo/java.png"
                 title="Java"
@@ -68,7 +69,7 @@ export default function About() {
               />
             </div>
           ) : currentSection === 1 ? (
-            <div className="grid grid-cols-4 gap-10 flex items-center justify-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 items-center justify-center">
               <TechCard
                 imageSrc="/logo/next.png"
                 title="Next"
@@ -82,11 +83,16 @@ export default function About() {
               <TechCard imageSrc="/logo/net.png" title=".NET" percentage={60} />
             </div>
           ) : (
-            <div className="grid grid-cols-4 gap-10 flex items-center justify-center">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 items-center justify-center">
               <TechCard
                 imageSrc="/logo/docker.png"
                 title="Docker"
                 percentage={80}
+              />
+              <TechCard
+                imageSrc="/logo/kubernetes.png"
+                title="Kubernetes"
+                percentage={70}
               />
               <TechCard
                 imageSrc="/logo/keycloak.png"
@@ -118,20 +124,12 @@ export default function About() {
           )}
         </div>
       </div>
-
-      <button
-        onClick={handlePrev}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 text-3xl text-[#FFB703] hover:text-white transition-colors"
-        aria-label="Previous section"
-      >
-        <FaArrowLeft />
-      </button>
       <button
         onClick={handleNext}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 text-3xl text-[#FFB703] hover:text-white transition-colors"
+        className="mr-[10%] absolute right-4 top-1/2 transform -translate-y-1/2 text-3xl text-[#FFB703] hover:text-white transition-colors"
         aria-label="Next section"
       >
-        <FaArrowRight />
+        <FaArrowCircleRight />
       </button>
     </main>
   );

@@ -13,23 +13,27 @@ export default function Home() {
     "Backend Developer",
     "DevOps Engineer",
   ];
+
   return (
-    <main className="flex h-full">
+    <main className="flex flex-col lg:flex-row h-full relative">
       <Head>
         <title>Home</title>
         <meta name="description" content="Learn more about me" />
         <link rel="icon" href="/myphoto/myphoto.png" />
       </Head>
-      <div className="basis-3/5 flex flex-col  justify-center h-full px-[11rem]">
-        <h3 className="text-[40px] text-[#FFFFFF] font-serif leading-relaxed">
+
+      {/* Left Section */}
+      <div className="basis-full lg:basis-3/5 flex flex-col justify-center h-full px-6 lg:px-[8rem] py-12 lg:py-0">
+        <h3 className="text-[30px] lg:text-[40px] text-[#FFFFFF] font-serif leading-relaxed">
           Hello, It's me
         </h3>
-        <h1 className="text-[50px] text-[#FFFFFF] font-serif leading-relaxed">
+        <h1 className="text-[40px] lg:text-[50px] text-[#FFFFFF] font-serif leading-relaxed">
           Chamika Dodamwaththa
         </h1>
         <TypingEffect words={roles} />
 
-        <div className="flex flex-wrap justify-center md:justify-start gap-3  relative">
+        {/* Social Icons */}
+        <div className="flex flex-wrap justify-center lg:justify-start gap-3 mt-5">
           <a
             href="https://github.com/Dodamwaththacs"
             target="_blank"
@@ -67,20 +71,24 @@ export default function Home() {
             <FaFacebook size={30} />
           </IconButton>
         </div>
+
+        {/* Download CV Button */}
         <div className="mt-7">
-          <span className="bg-[#FFB703] text-black p-2 rounded-lg font-bold">
+          <span className="bg-[#FFB703] text-black p-2 rounded-lg font-bold cursor-pointer">
             Download my CV
           </span>
         </div>
       </div>
-      <div className="basis-2/5  flex items-center justify-start  relative">
+
+      {/* Right Section - Image */}
+      <div className="basis-full lg:basis-2/5 flex items-center justify-center lg:justify-start relative mt-8 lg:mt-0">
         <Image
           src="/myphoto/myphoto.png"
           alt="Chamika"
           width={500}
           height={500}
           quality={100}
-          className="object-cover"
+          className="object-cover rounded-full lg:rounded-none"
         />
       </div>
     </main>

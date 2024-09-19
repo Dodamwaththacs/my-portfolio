@@ -55,7 +55,7 @@ export default function Projects() {
   ];
 
   return (
-    <div className=" text-white ">
+    <div className="text-white">
       <Head>
         <title>My Projects</title>
         <meta name="description" content="Check out my projects" />
@@ -63,7 +63,7 @@ export default function Projects() {
       </Head>
 
       <main className="flex items-center justify-center min-h-screen relative p-5">
-        <div className="grid  grid-cols-3 gap-10 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-10">
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />
           ))}
