@@ -19,9 +19,18 @@ export default function About() {
           <div className="text-center">
             <h1 className="text-4xl font-bold text-white">About Me</h1>
             <p className="mt-4 text-lg text-gray-400">
-              I am a passionate [Your Profession], driven by [Your Values or
-              Motivations]. Here's a glimpse of my journey and how we can work
-              together.
+              My expertise lies in blockchain and microservices, where I apply
+              my skills to create robust and scalable solutions. As a full stack
+              developer, I thrive on tackling complex challenges across the
+              entire development spectrum. I'm constantly exploring new ways to
+              leverage blockchain technology and microservices architecture to
+              build cutting-edge applications. When I'm not coding, you can find
+              me on the basketball court, where I enjoy playing to unwind and
+              stay active. This balance between technology and sports helps me
+              maintain creativity and focus in my professional life. I'm always
+              eager to take on new projects and collaborate with like-minded
+              professionals in the tech industry. Let's connect and explore how
+              we can create something amazing together!
             </p>
           </div>
 
