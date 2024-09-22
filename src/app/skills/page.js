@@ -50,7 +50,6 @@ export default function About() {
         <div className="w-4/5">
           {currentSection === 0 ? (
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 items-center justify-center">
-              {" "}
               <TechCard
                 imageSrc="/logo/java.png"
                 title="Java"
@@ -73,6 +72,11 @@ export default function About() {
               <TechCard
                 imageSrc="/logo/next.png"
                 title="Next"
+                percentage={80}
+              />
+              <TechCard
+                imageSrc="/logo/angular.png"
+                title="Angular"
                 percentage={80}
               />
               <TechCard
