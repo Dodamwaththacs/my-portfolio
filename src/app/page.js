@@ -46,37 +46,69 @@ export default function Home() {
               <FaGithub size={30} />
             </IconButton>
           </a>
-          <IconButton
-            text="LinkedIn"
-            color="bg-blue-600 hover:bg-blue-700 glow-effect"
+
+          <a
+            href="https://www.linkedin.com/in/chamika-dodamwaththa/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <FaLinkedin size={30} />
-          </IconButton>
-          <IconButton
-            text="Medium"
-            color="bg-gray-800 hover:bg-gray-900 glow-effect"
+            <IconButton
+              text="LinkedIn"
+              color="bg-blue-600 hover:bg-blue-700 glow-effect"
+            >
+              <FaLinkedin size={30} />
+            </IconButton>
+          </a>
+
+          <a
+            href="https://medium.com/@dodamwaththacs"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <FaMedium size={30} />
-          </IconButton>
-          <IconButton
-            text="Instagram"
-            color="bg-gradient-to-tr from-yellow-500 to-purple-600 via-pink-500 hover:from-yellow-600 hover:to-purple-700 hover:via-pink-600 glow-effect"
+            <IconButton
+              text="Medium"
+              color="bg-gray-800 hover:bg-gray-900 glow-effect"
+            >
+              <FaMedium size={30} />
+            </IconButton>
+          </a>
+
+          <a
+            href="https://www.instagram.com/dodamwaththacs/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <GrInstagram size={30} />
-          </IconButton>
-          <IconButton
-            text="Facebook"
-            color="bg-blue-600 hover:bg-blue-700 glow-effect"
+            <IconButton
+              text="Instagram"
+              color="bg-gradient-to-tr from-yellow-500 to-purple-600 via-pink-500 hover:from-yellow-600 hover:to-purple-700 hover:via-pink-600 glow-effect"
+            >
+              <GrInstagram size={30} />
+            </IconButton>
+          </a>
+
+          <a
+            href="https://www.facebook.com/chamika.dodamwaththa/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            <FaFacebook size={30} />
-          </IconButton>
+            <IconButton
+              text="Facebook"
+              color="bg-blue-600 hover:bg-blue-700 glow-effect"
+            >
+              <FaFacebook size={30} />
+            </IconButton>
+          </a>
         </div>
 
         {/* Download CV Button */}
-        <div className="mt-7">
-          <span className="bg-[#FFB703] text-black p-2 rounded-lg font-bold cursor-pointer">
+        <div className="mt-7 ">
+          <a
+            href="/CV/ChamikaDodamwaththa-CV.pdf"
+            download
+            className="bg-[#FFB703] text-black p-2 rounded-lg font-bold cursor-pointer glow-effect"
+          >
             Download my CV
-          </span>
+          </a>
         </div>
       </div>
 
