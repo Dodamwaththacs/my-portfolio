@@ -48,7 +48,7 @@ export default function Home() {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/chamika-dodamwaththa/"
+            href="https://www.linkedin.com/in/dodamwaththacs/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -61,7 +61,7 @@ export default function Home() {
           </a>
 
           <a
-            href="https://medium.com/@dodamwaththacs"
+            href="https://medium.com/@chamika31"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -74,7 +74,7 @@ export default function Home() {
           </a>
 
           <a
-            href="https://www.instagram.com/dodamwaththacs/"
+            href="https://www.instagram.com/chami_ka_31/"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -87,7 +87,7 @@ export default function Home() {
           </a>
 
           <a
-            href="https://www.facebook.com/chamika.dodamwaththa/"
+            href="https://www.facebook.com/profile.php?id=100010401245939"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -100,7 +100,6 @@ export default function Home() {
           </a>
         </div>
 
-        {/* Download CV Button */}
         <div className="mt-7 ">
           <a
             href="/CV/ChamikaDodamwaththa-CV.pdf"
@@ -112,7 +111,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Right Section - Image */}
       <div className="basis-full lg:basis-2/5 flex items-center justify-center lg:justify-start relative mt-8 lg:mt-0">
         <Image
           src="/myphoto/myphoto.png"
