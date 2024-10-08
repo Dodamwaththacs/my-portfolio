@@ -21,7 +21,7 @@ export default function RootLayout({ children }) {
             </div>
             <Header /> */}
           <main className="flex-grow">{children}</main>
-          <Footer />
+          {/* <Footer /> */}
           {/* </div> */}
         </SessionProvider>
       </body>

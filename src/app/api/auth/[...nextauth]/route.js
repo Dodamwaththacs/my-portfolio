@@ -23,6 +23,23 @@ const handler = NextAuth({
       console.log("NextAuth Debug:", code, metadata);
     },
   },
+  callbacks: {
+    async jwt({ token, account, user }) {
+      // Add access_token and id_token to the token right after sign in
+      if (account) {
+        token.accessToken = account.access_token;
+        token.idToken = account.id_token;
+      }
+      return token;
+    },
+    async session({ session, token }) {
+      // Add access_token and id_token to the session
+      session.accessToken = token.accessToken;
+      session.idToken = token.idToken;
+      console.log("this is Session on route :", session);
+      return session;
+    },
+  },
 });
 
 export { handler as GET, handler as POST };
