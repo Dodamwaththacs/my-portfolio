@@ -15,14 +15,14 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <SessionProvider>
-          {/* <div className="flex flex-col h-screen bg-[#030014] overflow-y-scroll overflow-x-hidden">
+          <div className="flex flex-col h-screen bg-[#030014] overflow-y-scroll overflow-x-hidden">
             <div className="fixed bottom-0 w-full">
               <StarsCanvas />
             </div>
-            <Header /> */}
-          <main className="flex-grow">{children}</main>
-          {/* <Footer /> */}
-          {/* </div> */}
+            <Header />
+            <main className="flex-grow">{children}</main>
+            <Footer />
+          </div>
         </SessionProvider>
       </body>
     </html>

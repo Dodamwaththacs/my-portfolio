@@ -5,7 +5,6 @@ import axios from "axios";
 
 export default function AuthButton() {
   const handleSignIn = async () => {
-    console.log("sign in with keycloak");
     try {
       await signIn("keycloak", {
         callbackUrl: "/auth",
@@ -19,10 +18,21 @@ export default function AuthButton() {
     try {
       const session = await getSession();
       if (session) {
-        console.log("idToken:", session.idToken);
+        console.log("accessToken:", session.accessToken);
       }
     } catch (error) {
       console.error("Get idToken error:", error);
+    }
+  };
+
+  const handleSignOutDefault = async () => {
+    console.log("signing out from Keycloak...");
+    try {
+      await signOut({
+        callbackUrl: "/test",
+      });
+    } catch (error) {
+      console.error("SignOut error:", error);
     }
   };
 
@@ -44,7 +54,7 @@ export default function AuthButton() {
   };
 
   return (
-    <div className="flex space-x-4">
+    <div className="flex space-x-4 relative">
       <button
         onClick={handleSignIn}
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
@@ -56,6 +66,12 @@ export default function AuthButton() {
         className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
       >
         Sign out
+      </button>
+      <button
+        onClick={handleSignOutDefault}
+        className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Sign out Default
       </button>
       <button
         onClick={getIdToken}

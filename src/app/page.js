@@ -1,19 +1,55 @@
+"use client";
+
 import Head from "next/head";
 import Image from "next/image";
 import IconButton from "../components/IconButton";
 import TypingEffect from "../components/TypingEffect";
 import { FaGithub, FaLinkedin, FaMedium, FaFacebook } from "react-icons/fa";
 import { GrInstagram } from "react-icons/gr";
+import axios from "axios";
+import { useSession, signIn } from "next-auth/react";
+
 import Hero from "@/components/threeJS/main/Hero";
 
 export default function Home() {
+  const { data: session } = useSession();
+
   const roles = [
     "Fullstack Developer",
     "Frontend Developer",
     "Backend Developer",
     "DevOps Engineer",
   ];
+  const handleDownloadCV = async () => {
+    if (!session) {
+      // If no session exists, redirect to sign-in
+      await signIn("keycloak", {
+        callbackUrl: "/",
+      });
+    }
 
+    try {
+      const token = session.accessToken;
+      const response = await axios.get(
+        "http://localhost:33000/api/files/download/1",
+        {
+          responseType: "blob",
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        }
+      );
+      const url = window.URL.createObjectURL(new Blob([response.data]));
+      const link = document.createElement("a");
+      link.href = url;
+      link.setAttribute("download", "CV.pdf");
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+    } catch (error) {
+      console.error("Error downloading the file:", error);
+    }
+  };
   return (
     <main className="flex flex-col lg:flex-row h-full relative">
       <Head>
@@ -100,14 +136,13 @@ export default function Home() {
           </a>
         </div>
 
-        <div className="mt-7 ">
-          <a
-            href="/CV/ChamikaDodamwaththa-CV.pdf"
-            download
-            className="bg-[#FFB703] text-black p-2 rounded-lg font-bold cursor-pointer glow-effect"
+        <div className="mt-7">
+          <button
+            onClick={handleDownloadCV}
+            className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
           >
             Download my CV
-          </a>
+          </button>
         </div>
       </div>
 
