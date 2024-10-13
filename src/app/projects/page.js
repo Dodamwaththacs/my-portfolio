@@ -9,7 +9,7 @@ export default function Projects() {
         "This is a portable weather station targeted for hikers and campers to ensure their safety and awareness.",
       image: "/project/weatherStation.jpg",
       technologies: ["C", "Arduino IDE", "Arduino Uno", "EasyEDA", "Blender"],
-      link: "https://project1-link.com",
+      link: "https://github.com/Dodamwaththacs/portable-weather-station.git",
     },
     {
       title: "Health Hive ",
@@ -33,7 +33,7 @@ export default function Projects() {
         "Solidity",
         "Ganache",
       ],
-      link: "https://project2-link.com",
+      link: "https://github.com/Dodamwaththacs/healthhive-backend.git",
     },
     {
       title: "Portfolio Website",
@@ -50,7 +50,7 @@ export default function Projects() {
         "C#",
         "ProsgreSQL",
       ],
-      link: "https://project1-link.com",
+      link: "https://github.com/Dodamwaththacs/Chamika's Portfolio.git",
     },
   ];
 
