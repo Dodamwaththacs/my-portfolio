@@ -50,7 +50,7 @@ export default function Projects() {
         "C#",
         "ProsgreSQL",
       ],
-      link: "https://github.com/Dodamwaththacs/my-portfolio.git",
+      link: "https://github.com/Dodamwaththacs/Chamika's Portfolio.git",
     },
   ];
 

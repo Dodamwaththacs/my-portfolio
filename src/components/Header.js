@@ -3,6 +3,8 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import styles from "../styles/Header.module.css";
 import { signIn, signOut, getSession, useSession } from "next-auth/react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSignInAlt, faSignOutAlt } from "@fortawesome/free-solid-svg-icons";
 
 export default function Header() {
   const pathname = usePathname();
@@ -20,12 +22,9 @@ export default function Header() {
 
   const handleSignOut = async () => {
     try {
-      const idToken = session.idToken;
-      const logoutUrl = `http://localhost:8080/realms/my-portfolio/protocol/openid-connect/logout?id_token_hint=${idToken}&post_logout_redirect_uri=http://localhost:3000`;
-
-      await signOut({ redirect: false });
-
-      window.location.href = logoutUrl;
+      await signOut({
+        callbackUrl: "/",
+      });
     } catch (error) {
       console.error("SignOut error:", error);
     }
@@ -86,17 +85,17 @@ export default function Header() {
         {status !== "authenticated" && (
           <button
             onClick={handleSignIn}
-            className="relative bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
+            className={`${styles.button} relative flex items-center bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition-transform duration-300 ease-in-out hover:scale-105`}
           >
-            Sign Up
+            <FontAwesomeIcon icon={faSignInAlt} className="mr-2" />
           </button>
         )}
         {status === "authenticated" && (
           <button
             onClick={handleSignOut}
-            className="relative bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded"
+            className={`${styles.button} relative flex items-center bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded transition-transform duration-300 ease-in-out hover:scale-105`}
           >
-            Sign Out
+            <FontAwesomeIcon icon={faSignOutAlt} className="mr-2" />
           </button>
         )}
       </div>

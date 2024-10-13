@@ -29,7 +29,7 @@ export default function AuthButton() {
     console.log("signing out from Keycloak...");
     try {
       await signOut({
-        callbackUrl: "/test",
+        callbackUrl: "/auth",
       });
     } catch (error) {
       console.error("SignOut error:", error);
@@ -42,7 +42,7 @@ export default function AuthButton() {
       if (session) {
         const idToken = session.idToken;
 
-        const logoutUrl = `http://localhost:8080/realms/my-portfolio/protocol/openid-connect/logout?id_token_hint=${idToken}&post_logout_redirect_uri=http://localhost:3000/test`;
+        const logoutUrl = `https://myportfolio.ddnsking.com:8443/realms/Chamika's Portfolio/protocol/openid-connect/logout?id_token_hint=${idToken}&post_logout_redirect_uri=http://localhost:3000/test`;
 
         window.location.href = logoutUrl; // Perform a browser redirect
       } else {
